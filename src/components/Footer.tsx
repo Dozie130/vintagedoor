@@ -25,7 +25,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Vintage Door</h3>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/7a711de6-6f6d-4e76-b129-383bcfa6990f.png" 
+                alt="Vintage Door Logo" 
+                className="h-16 bg-white p-1 rounded"
+              />
+            </div>
             <p className="text-gray-300 mb-4">
               Premium interior doors for Nigerian homes and businesses.
               Quality craftsmanship delivered nationwide.

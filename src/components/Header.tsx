@@ -46,9 +46,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <h1 className="text-2xl font-bold text-navy-800">
-              Vintage <span className="text-vintage-700">Door</span>
-            </h1>
+            <img 
+              src="/lovable-uploads/7a711de6-6f6d-4e76-b129-383bcfa6990f.png" 
+              alt="Vintage Door Logo" 
+              className="h-12 mr-2"
+            />
           </Link>
 
           {/* Desktop Navigation */}
