@@ -22,6 +22,9 @@ import {
   SheetClose,
   SheetFooter,
 } from "@/components/ui/sheet";
+import Info from "@/components/Info";
+import Minus from "@/components/Minus";
+import Plus from "@/components/Plus";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
