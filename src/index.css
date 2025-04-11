@@ -38,6 +38,7 @@
 
   * {
     @apply border-border;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -56,10 +57,68 @@
   }
   
   .section-padding {
-    @apply py-8 px-4 md:py-12 md:px-6 lg:py-16 lg:px-8;
+    @apply py-12 px-4 md:py-16 md:px-6 lg:py-20 lg:px-8;
   }
   
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
+
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/10 border border-white/20;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-vintage-800 to-navy-700 bg-clip-text text-transparent;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+}
+
+.shadow-vintage {
+  box-shadow: 0 10px 25px -5px rgba(133, 121, 105, 0.2), 0 8px 10px -6px rgba(133, 121, 105, 0.1);
 }
