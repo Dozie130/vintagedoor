@@ -1,9 +1,13 @@
 
 import { Plus as PlusIcon } from "lucide-react";
 
-const Plus = () => {
+interface PlusProps {
+  className?: string;
+}
+
+const Plus = ({ className }: PlusProps) => {
   return (
-    <PlusIcon className="h-5 w-5" />
+    <PlusIcon className={className || "h-5 w-5"} />
   );
 };
 

@@ -1,9 +1,13 @@
 
 import { Info as InfoIcon } from "lucide-react";
 
-const Info = () => {
+interface InfoProps {
+  className?: string;
+}
+
+const Info = ({ className }: InfoProps) => {
   return (
-    <InfoIcon className="h-5 w-5" />
+    <InfoIcon className={className || "h-5 w-5"} />
   );
 };
 

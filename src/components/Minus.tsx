@@ -1,9 +1,13 @@
 
 import { Minus as MinusIcon } from "lucide-react";
 
-const Minus = () => {
+interface MinusProps {
+  className?: string;
+}
+
+const Minus = ({ className }: MinusProps) => {
   return (
-    <MinusIcon className="h-5 w-5" />
+    <MinusIcon className={className || "h-5 w-5"} />
   );
 };
 
