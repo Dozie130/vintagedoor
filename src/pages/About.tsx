@@ -1,6 +1,7 @@
 
 import Layout from "@/components/Layout";
-import { Leaf, Clock, Star } from "lucide-react";
+import { Leaf, Clock, Star, Mail, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
@@ -55,9 +56,24 @@ const About = () => {
         </div>
 
         <div className="text-center mt-16">
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-8">
             Trust Vintage Door to deliver exceptional products and service, backed by our passion for excellence and deep-rooted experience.
           </p>
+          
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8">
+            <a href="mailto:dozie.ebuka@gmail.com" className="flex items-center space-x-2 text-vintage-600 hover:text-vintage-700">
+              <Button variant="outline" className="gap-2">
+                <Mail className="h-5 w-5" />
+                <span>dozie.ebuka@gmail.com</span>
+              </Button>
+            </a>
+            <a href="tel:+2348129576142" className="flex items-center space-x-2 text-vintage-600 hover:text-vintage-700">
+              <Button variant="outline" className="gap-2">
+                <Phone className="h-5 w-5" />
+                <span>+234 8129576142</span>
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
     </Layout>
