@@ -34,7 +34,14 @@ const FeaturedProducts = () => {
                   </Badge>
                 )}
                 <img
-                  src={door.images[0]}
+                  src={door.id === "door-001" 
+                    ? "https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=2074" 
+                    : door.id === "door-002"
+                    ? "https://images.unsplash.com/photo-1509644851169-2acc08aa16cd?q=80&w=1974"
+                    : door.id === "door-003"
+                    ? "https://images.unsplash.com/photo-1596162955779-9308c161a271?q=80&w=1974" 
+                    : "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?q=80&w=1974"
+                  }
                   alt={door.name}
                   className="h-full w-full object-cover transition-transform hover:scale-105 duration-300"
                 />
